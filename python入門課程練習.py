@@ -81,6 +81,30 @@ except ValueError:
     print("請輸入正確的數字。")
 
 
+# 9. 進階運算
+start = int(input("請輸入起始數字: "))
+end = int(input("請輸入結束數字: "))
+
+count = 0
+total = 0
+for i in range(start, end + 1):
+    if i % 7 == 0 or i % 11 == 0:
+        print(i)
+        total += i
+        count += 1
+
+print("總共有", count, "個倍數。")
+print("數字總和為:", total)
+
+
+# 10. 文字反轉
+while True:
+    num = input("請輸入一個數字 (輸入9999結束): ")
+    if num == "9999":
+        break
+    reversed_num = num[::-1]
+    print("反轉數字為:", reversed_num)
+    
 
 
 '''
@@ -88,13 +112,13 @@ except ValueError:
 以下是實驗性質或GPT優化過的
 ============================
 '''
-'''數學應用 實驗性質 原本版'''
+"數學模組應用 實驗性質 原本版"
 import math
 a = 90*(math.pi/180)
 print(math.degrees(90), "、", math.radians(5156.620156177409), "、", math.sin(a))
 
 
-'''數學模組應用 GPT優化版'''
+"數學模組應用 GPT優化版"
 import math
 # 角度與弧度轉換
 angle_degrees = 90
