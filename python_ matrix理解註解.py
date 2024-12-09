@@ -69,7 +69,7 @@ def conjugate_gradient(                                     # 需要先理解「
     error_x_solution = 1e9
     error = 1e9
 
-    iterations = 0                                               # 計數用 ?
+    iterations = 0                                               # 紀錄迭代次數，檢查有沒有超過 max_iterations 的次數
 
     while error > tol :
         w = np.dot(spd_matrix, p0)                               # np.dot 計算spd_matrix 與 p0(複製的矩陣) 的點積(若是矩陣，同矩陣乘法)
