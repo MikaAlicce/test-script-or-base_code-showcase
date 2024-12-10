@@ -4,6 +4,7 @@
 
 嘗試理解網路上高手寫的程式碼
 ※ code不是我寫的 ※
+「#」備註是我用來理解每段程式碼
 
 code來源 : https://github.com/TheAlgorithms/Python
 '''
